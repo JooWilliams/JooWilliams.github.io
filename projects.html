@@ -21,6 +21,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,500;1,600;1,700&display=swap" rel="stylesheet">
   </head>
   <body class="projects-page">
     <!-- ===== HEADER ===== -->
@@ -46,19 +47,24 @@
     <section class="proj-hero">
       <div class="proj-hero__bg"></div>
       <div class="container proj-hero__content">
-        <span class="proj-hero__tag">// meus_projetos</span>
-        <h1 class="proj-hero__title">Coisas que eu <span>construí</span></h1>
-        <p class="proj-hero__sub">
-          Projetos acadêmicos, automações e experimentos que foram apenas
-          desculpas para apreder mais
-        </p>
+        <div class="proj-hero__head">
+          <div class="proj-hero__head-left">
+            <span class="proj-hero__tag">// projetos</span>
+            <h1 class="proj-hero__title">Coisas que <span>construí</span></h1>
+          </div>
+          <p class="proj-hero__sub">
+            Um recorte de automações, APIs e experimentos. Cada projeto foi
+            uma desculpa pra aprender algo novo — e resolver um problema real.
+          </p>
+        </div>
 
         <!-- Filter pills -->
         <div class="proj-filters">
           <button class="filter-btn active" data-filter="all">Todos</button>
-          <button class="filter-btn" data-filter="java">Java</button>
           <button class="filter-btn" data-filter="python">Python</button>
-          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="java">Java</button>
+          <button class="filter-btn" data-filter="web">React</button>
+          <button class="filter-btn" data-filter="java">Spring Boot</button>
         </div>
       </div>
     </section>
@@ -288,9 +294,16 @@
     </main>
 
 <section class="freela">
-  <h1 class="tit1">Tem um projeto em mente?</h1>
-  <p class="pragraf">Freelas, parceria e vagas - me manda uma mensagem.</p>
-
+  <div class="freela__text">
+    <h2 class="tit1">Tem um projeto em mente?</h2>
+    <p class="pragraf">
+      Freelas, parcerias e vagas full-stack — me manda uma mensagem.
+    </p>
+  </div>
+  <a href="index.html#contact" class="freela__btn">
+    Vamos conversar
+    <i class="fas fa-arrow-up-right-from-square"></i>
+  </a>
 </section>
 
     <!-- ===== FOOTER ===== -->
