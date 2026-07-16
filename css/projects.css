@@ -148,7 +148,7 @@
   font-size: 1.2rem;
   color: #ffffff;
   flex-shrink: 0;
-  background: rgb(39, 39, 39);
+  background: #070711;
 }
 
 .proj-card__badges { display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: flex-end; }
@@ -203,7 +203,7 @@
   margin: 0 auto;
 
   color: #fff;
-  background: black;
+  background: #070711;
   border-radius: 30px;
 
   display: flex;
