@@ -81,18 +81,21 @@ section { padding: 90px 0; }
   border: none;
 }
 
+/*Ver no github */
 .btn--primary {
-  background: var(--accent-grad);
+  background: #070711;
   color: #fff;
-  box-shadow: 0 0 24px rgba(124,107,255,0.45);
+  box-shadow: 0 0 24px rgba(56, 56, 56, 0.45);
 }
 .btn--primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 38px rgba(124,107,255,0.65);
+  box-shadow: 0 0 38px rgba(107, 107, 107, 0.65);
 }
 
+
+/* Voltar ao portifólio */
 .btn--outline {
-  border: 2px solid var(--accent);
+  border: 1px solid #070711;
   color: var(--accent);
   background: transparent;
 }
@@ -149,7 +152,7 @@ section { padding: 90px 0; }
 }
 
 .nav__link--highlight {
-  background: var(--accent-grad);
+  background: #070711;
   color: #fff !important;
   padding: 0.45rem 1.1rem;
   display: flex;
@@ -159,7 +162,7 @@ section { padding: 90px 0; }
 .nav__link--highlight:hover {
   transform: translateY(-2px);
   box-shadow: 0 2px 10px rgba(54, 54, 54, 0.5);
-  background: var(--accent-grad);
+  background: #070711;
 }
 
 .nav__toggle {
@@ -329,16 +332,14 @@ section { padding: 90px 0; }
   transition: var(--transition);
 }
 .about__card:hover {
-  transform: translateY(-5px);
-  border-color: var(--accent);
-  box-shadow: 0 12px 36px rgba(108,92,231,0.15);
+  box-shadow: 0 1px 10px #0707114f;
 }
 
 .about__icon {
-  width: 52px;
-  height: 52px;
-  border-radius: 14px;
-  background: var(--accent-grad);
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  background: #070711;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -454,28 +455,25 @@ section { padding: 90px 0; }
 }
 
 .timeline__dot {
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background: var(--accent-grad);
-  border: 3px solid var(--bg-2);
+  background: #070711;
   flex-shrink: 0;
   position: relative;
   z-index: 1;
-  box-shadow: 0 0 18px rgba(108,92,231,0.35);
 }
 
 .timeline__card {
   flex: 1;
   background: var(--surface);
-  border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 1.5rem 1.75rem;
   transition: var(--transition);
 }
 .timeline__card:hover {
   border-color: var(--accent);
-  box-shadow: 0 8px 28px rgba(108,92,231,0.14);
+  box-shadow: 0 4px 10px #0707112d;
 }
 
 .timeline__header h3 {
@@ -545,25 +543,23 @@ section { padding: 90px 0; }
   gap: 0.5rem;
   padding: 1.75rem 1.5rem;
   background: #ffffff;
-  border: 1px solid rgba(0,151,178,0.2);
   border-radius: var(--radius-lg);
   min-width: 170px;
   transition: var(--transition);
   text-align: center;
-  box-shadow: 0 4px 14px rgba(0,151,178,0.08);
+  box-shadow: 0 2px 6px #07071118;
 }
 .contact__card:hover {
   background: #f0fafd;
   border-color: var(--accent-2);
   transform: translateY(-5px);
-  box-shadow: 0 12px 32px rgba(0,151,178,0.18);
 }
 
 .contact__icon {
   width: 50px;
   height: 50px;
   border-radius: 14px;
-  background: rgba(0,151,178,0.1);
+  background: rgba(120, 132, 134, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
