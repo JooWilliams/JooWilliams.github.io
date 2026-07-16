@@ -8,7 +8,7 @@
   --surface-2:   #f0f1ff;
   --accent:      #444544;
   --accent-2:    #5b5c5b;
-  --accent-grad: linear-gradient(135deg, #000000d5, #5a5a5abb);
+  --accent-grad: #070711;
   --text:        #1a1a2e;
   --text-muted:  #3b3b3b;
   --border:      rgba(80, 80, 80, 0.18);
@@ -436,7 +436,7 @@ section { padding: 90px 0; }
 /* ===== EXPERIENCE ===== */
 .experience { background: var(--bg-2); }
 
-.timeline { max-width: 780px; margin: 0 auto; position: relative; }
+.timeline { max-width: 1080px; margin: 0 auto; position: relative; }
 .timeline::before {
   content: '';
   position: absolute;
