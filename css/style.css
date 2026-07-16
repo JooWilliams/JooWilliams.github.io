@@ -11,14 +11,14 @@
   --accent-grad: linear-gradient(135deg, #000000d5, #5a5a5abb);
   --text:        #1a1a2e;
   --text-muted:  #3b3b3b;
-  --border:      rgba(108, 92, 231, 0.18);
+  --border:      rgba(80, 80, 80, 0.18);
 
   --contact-bg:  #dfdfdf;
   --contact-tag: #0097b2;
 
   --radius:      14px;
   --radius-lg:   22px;
-  --shadow:      0 8px 32px rgba(108,92,231,0.12);
+  --shadow:      0 8px 32px rgba(82, 82, 82, 0.12);
   --transition:  0.3s cubic-bezier(0.4,0,0.2,1);
 
   --font-main: 'Poppins', sans-serif;
