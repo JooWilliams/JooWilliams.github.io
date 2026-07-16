@@ -33,3 +33,6 @@ cards.forEach((card, i) => {
   card.style.transition = `opacity 0.5s ease ${i * 0.08}s, transform 0.5s ease ${i * 0.08}s, box-shadow 0.22s ease, border-color 0.22s ease`;
   observer.observe(card);
 });
+
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();

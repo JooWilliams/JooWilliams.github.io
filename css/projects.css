@@ -80,7 +80,7 @@
   background: var(--accent-grad);
   border-color: transparent;
   color: #fff;
-  box-shadow: 0 0 18px rgba(108,92,231,0.3);
+  box-shadow: 0 0 18px rgba(59, 59, 59, 0.3);
 }
 
 /* ===== MAIN / GRID ===== */
@@ -88,14 +88,18 @@
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.75rem;
+}
+
+.card--featured{
+    grid-column: span 2;
 }
 
 /* ===== CARTOON CARD ===== */
 .proj-card {
   background: #ffffff;
-  border: 3px solid #d0ccf8;
+  border: 1px solid #80808052;
   border-radius: 24px;
   padding: 1.75rem;
   display: flex;
@@ -104,12 +108,6 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-
-  /* Cartoon shadow – offset solid shadow */
-  box-shadow: 5px 5px 0px #c5c0f0, 0 8px 24px rgba(108,92,231,0.1);
-  transition: transform 0.22s cubic-bezier(0.34,1.56,0.64,1),
-              box-shadow 0.22s ease,
-              border-color 0.22s ease;
 }
 
 /* Cartoon shine stripe */
@@ -125,11 +123,8 @@
 }
 
 .proj-card:hover {
-  transform: translate(-3px, -5px) scale(1.025);
-  box-shadow: 5px 7px 4px black;
-  border-color: var(--accent);
+  box-shadow: 0px 1px 3px black;
 }
-.proj-card:hover::before { opacity: 1; }
 
 /* card hidden state for filter */
 .proj-card.hidden {
@@ -144,49 +139,38 @@
 }
 
 .proj-card__icon {
-  width: 52px;
-  height: 52px;
-  border-radius: 16px;
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  color: #fff;
-  box-shadow: 3px 3px 0 rgba(0,0,0,0.12);
+  font-size: 1.2rem;
+  color: #ffffff;
   flex-shrink: 0;
+  background: rgb(39, 39, 39);
 }
 
 .proj-card__badges { display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: flex-end; }
 
 /* ===== TECH BADGES ===== */
-.badge {
+.year {
   padding: 0.25rem 0.65rem;
   border-radius: 50px;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.03em;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
 }
-.badge--php    { background: #ede9ff; color: #6c3fd1; border-color: #c4b5fd; }
-.badge--web    { background: #e0f7ff; color: #0077a8; border-color: #7dd3ed; }
-.badge--java   { background: #fff4e0; color: #c07000; border-color: #fbbf24; }
-.badge--spring { background: #eaf7e0; color: #3a7d18; border-color: #86d45c; }
-.badge--python { background: #f5f4e0; color: #cac009; border-color: #e6e200; }
-.badge--auto   { background: #ffeef5; color: #be1a64; border-color: #f9a8d4; }
-.badge--html   { background: #fff0ed; color: #b83110; border-color: #fca58e; }
-.badge--ml     { background: #f5e8ff; color: #8b1fc7; border-color: #d8a8f7; }
-.badge--oracle { background: #ffeaea; color: #b41a1a; border-color: #fca5a5; }
-.badge--vercel { background: #f2fff6; color: #246504; border-color: #86d45c;}
-.badge--railway { background: #eeeeee; color: #b0b0b0; border-color: #9b9b9b;}
-.badge--supabase { background: #f2fff6; color: #399909; border-color: #97ec69;}
 
 
 /* ===== CARD CONTENT ===== */
 .proj-card__title {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 800;
   color: var(--text);
   line-height: 1.2;
+  font-family: "Sora", sans-serif;
 }
 
 .proj-card__desc {
@@ -194,6 +178,7 @@
   color: var(--text-muted);
   line-height: 1.65;
   flex: 1;
+  font-family: "Poppins", sans-serif;
 }
 .proj-card__desc strong { color: var(--text); }
 
@@ -207,10 +192,25 @@
   font-size: 0.75rem;
   font-family: 'Fira Code', monospace;
   padding: 0.2rem 0.6rem;
-  background: rgba(73, 73, 73, 0.07);
-  border: 1px solid rgba(58, 58, 58, 0.2);
-  border-radius: 6px;
+  background: rgba(110, 110, 110, 0.158);
+  border-radius: 15px;
   color: var(--accent);
+}
+
+/* ===== FREELA ====== */
+.freela{
+  max-width: 68rem;
+  margin: 0 auto;
+
+  color: #fff;
+  background: black;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 /* ===== CARD FOOTER ===== */
@@ -227,23 +227,15 @@
   align-items: center;
   gap: 0.4rem;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight:400;
   color: var(--accent-2);
   transition: var(--transition);
 }
 .proj-card__link:hover { color: var(--accent); gap: 0.6rem; }
 
-.proj-card__type {
-  font-size: 0.72rem;
-  font-family: 'Fira Code', monospace;
-  color: var(--text-muted);
-  background: #f0f1fa;
-  padding: 0.2rem 0.6rem;
-  border-radius: 6px;
-}
-
 /* ===== FOOTER ===== */
 .proj-footer { text-align: center; }
+
 .footer-gh {
   display: inline-flex;
   align-items: center;
@@ -260,4 +252,10 @@
   .proj-nav-right { gap: 0.4rem; }
   .btn--sm { padding: 0.4rem 0.8rem; font-size: 0.8rem; }
   .cards-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px){
+  .card--featured {
+    grid-column: span 1;
+}
 }
