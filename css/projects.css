@@ -263,6 +263,62 @@
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
 }
 
+
+/* ===== FREELA DOWNLOAD ===== */
+.freeladwn{
+  max-width: 58rem;
+  margin: 0 auto 50px;
+
+  color: #fff;
+  background: #070711;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2.75rem 3rem;
+}
+
+.freela__textdwn { text-align: left; }
+
+.freeladwn .tit1dwn {
+  font-size: clamp(1.25rem, 3.5vw, 2.0rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.freeladwn .pragrafdwn {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.75rem;
+  max-width: 40rem;
+  margin: 0;
+}
+
+.freeladwn__btndwn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 50px;
+  background: #fff;
+  color: #070711;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+.freela__btndwn i { font-size: 0.85em; }
+.freela__btndwn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+}
+
+
+
 /* ===== CARD FOOTER ===== */
 .proj-card__footer {
   display: flex;
